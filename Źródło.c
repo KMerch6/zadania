@@ -1,16 +1,16 @@
 #include <iostream>
-#include "èrÛd≥o.h"
+#include "≈πr√≥d≈Ço.h"
 
 using namespace std;
 
-void selectionSort(int tab[]) {						//utworzenie funkcji sortujπcej
+void selectionSort(int tab[]) {						//utworzenie funkcji sortujƒÖcej
 	for (int i = 0; i < 11;i++) {					//wybranie cyfry z tabeli
 		int min = i;
 
-		for (int j = i+1; j < 11;j++) {				//szukanie najmniejszej cyfty spoúrÛd pozosta≥ych
+		for (int j = i+1; j < 11;j++) {				//szukanie najmniejszej cyfty spo≈õr√≥d pozosta≈Çych
 			if (tab[min] > tab[j]) min = j;
 		}
-			int x = tab[i];							//zamiana pierwszej cyfry z najmniejszπ w tabeli
+			int x = tab[i];							//zamiana pierwszej cyfry z najmniejszƒÖ w tabeli
 			tab[i] = tab[min];
 			tab[min] = x;
 	}
@@ -19,9 +19,9 @@ void selectionSort(int tab[]) {						//utworzenie funkcji sortujπcej
 int main() {
 	int tab[11] = {0,1,2,6,1,1,5,1,4,8,7};			//tworzenie tabeli
 
-	selectionSort(tab);								//wywo≥anie funkcji
+	selectionSort(tab);								//wywo≈Çanie funkcji
 
 	for (int i = 0;i < 11;i++) {
-		printf("d%", tab[i]);						//wyúwietlenie posortowanej tabeli
+		printf("%d", tab[i]);						//wy≈õwietlenie posortowanej tabeli
 	}
 }
